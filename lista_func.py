@@ -1,10 +1,7 @@
 import os
 
 def deletar_lista(lista:str):
-    try:
         os.remove(lista)
-    except FileNotFoundError:
-        print(f"Arquivo '{lista}' não encontrado.")
 
 class Lista:
     def __init__(self):

@@ -50,7 +50,7 @@ def menu():
                     print(f"\n{erro_remover}")
                 try:
                     item_remover = input("qual item você deseja remover?\n\nDigite X para cancelar a operação\n\n")
-                    if item_remover == "X":
+                    if item_remover.upper() == "X":
                         break
                     item_remover = int(item_remover)
                     Lista1.remover_item(item_remover)
@@ -69,7 +69,7 @@ def menu():
                     print(f"\n{erro_editar}")
                 try:
                     item_editar = input("qual item você deseja editar?\n\nDigite X para cancelar a operação\n")
-                    if item_editar == "X":
+                    if item_editar.upper() == "X":
                         break
                     item_editar = int(item_editar)
                     novo_item = input("Digite o novo a fazer:\n")

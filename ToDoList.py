@@ -3,7 +3,10 @@ import lista_func as L
 from sys import exit
 
 def limpar_tela():
-    os.system('clear')
+    if os.name=="nt":
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def inserir_a_fazer():
     afazer=str(input("Digite o a fazer: \n"))
